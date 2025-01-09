@@ -1,0 +1,303 @@
+*{
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  
+}
+.top-container{
+    position:relative; /*Enable postioning for the text inside the container*/
+    height:100vh;/*make container full viewport of height*/
+    display:flex; /* Centers the content horizontally and vertically */
+    justify-content: center; /*horizontal center*/
+    align-items: center;/*vertical center*/
+    overflow:hidden;/*Ensure the images does not overflow*/
+}
+div{
+    display:block;
+    unicode-bidi: isolate;
+}
+body{
+    color:purple;
+    margin:0;
+    text-align: center;
+    font-family: "Caveat", serif;
+}
+.anime-background{
+    position:absolute; /*Put the image behind the text*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;/*Ensure the image covers the container without disortion*/
+    z-index: -1;/*Ensure images stay behind the text*/
+    
+}
+.title-text{
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);/*Adds a shadow for better readability
+    */
+}
+.title-text h1{
+    font-size:3rem; /*Adjust the size as needed.*/
+    margin:0.5rem 0;
+
+}
+.title-text h2{
+    font-size:2rem; /*Adjust the size as needed */
+    margin:0.5rem 0;
+}
+.title-text .pro{
+    color:#ff4500;
+    font-weight:bold;
+}
+.title-text .and{
+    font-style: italic;
+}
+.selfie{
+    width:200px;
+    height:200px;
+    border-radius:50%; /*Make picture circular*/
+    object-fit: cover; /*Ensure picture fit inside the circle without distortion*/
+    border:4px solid#fff;/*add a border for a clean look.*/
+    box-shadow: 0 px 8px rgba(0,0,0,0.3);/*Add a shadow for depth.*/
+}
+.hero{
+    text-align: center;
+    padding:2rem;
+    background:#f4f4f4;
+}
+.skills{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap; /*Allows wrapping for smaller screen sizes.*/
+    align-items: center; /*Centers items vertically */
+    justify-content: center; /* Centers items horizontally*/
+    gap:3rem;
+    padding:2rem;
+    text-align: center; /*center the text*/
+}
+/*Responsive GIF styling*/
+.anime-coding{
+    width:100%;
+    max-width: 500px; /*Make the GIF scale with the container */
+    height:auto; /*Maintain aspect ratio*/
+    border-radius: 10px; /*add rounded corners for four sides*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-top: 8%;
+    
+}
+.text-content p{
+font-size: 1rem; /*Adjust font size*/
+color:#333;
+margin-bottom:1rem;
+}
+.gif-container{
+    display:flex;
+    justify-content: center; /*Center the GIF horizontally*/
+    align-items: center;
+    gap:2rem;
+    max-width: 1200px; /*Limit the total width*/
+    flex-wrap:wrap;
+
+}
+.skills h1{
+    font-size:3rem; /*Large font size*/
+    color:teal;
+    margin:0;
+}
+.text-content h2{
+    font: size 1.8rem;;
+    margin-bottom: 1rem;
+    color:#333;
+}
+.hyte70{
+    width:350px;
+    height:350px;
+    border-radius: 50%; /*Make the picture turn to a circle*/
+    object-fit: cover; /*Make sure the picture fit in the circle*/
+    border:8px solid white;
+    box-shadow: 0px 9px rgba(0,0,0,0.1);
+
+}
+.pc-build h1{
+    font-size: 3rem;
+    color:teal;
+    margin: 0;
+}
+.pc-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+.content-pc p{
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    color:#333;
+}
+.contact-me{
+    text-align: center;
+    padding:2rem;
+}
+.contact-me h2{
+    font-size: 2.5rem;
+    color:#48b4b4;
+    margin-bottom: 1rem;
+}
+.contact-me p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color:#333;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Contact Button Styling*/
+.contact-btn{
+    display:inline-block;
+    background-color:#48b4b4;
+    color:#fff; /*White text*/
+    font-size:1.2rem;
+    font-weight: bold;
+    text-decoration: none;/*Remove underline*/
+    padding:0.8rem 1.5rem; /*Add padding around the text*/
+    border-radius: 5px; /*Rounded corners.*/
+    box-shadow: 0 4px 6px rgba(0,0,0,02);/*Button Shadow*/
+    transition:background-color 0.3s ease, transform 0.2s ease; /*Animation*/
+}
+.contact-btn:hover{
+    background-color:#3a9898; /*Darker teal on hover */
+    transform:scale(1.05); /*Slightly grow the button*/
+}
+.bottom-container{
+    background-color:#48b4b4;
+    padding:50px 0 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1));
+}
+div{
+    display:block;
+    unicode-bidi: isolate;
+}
+.footer-link{
+    text-decoration: none;
+    color:white;
+    margin:0 1rem;
+    font-size: 1rem;
+}
+.footer-link:hover{
+    color:#005582;
+    text-decoration: underline; /*Add underline when hover*/
+}
+.copyright{
+    text-align: center;
+    color:black;
+    font-size: 0.75rem;
+    padding:20px 0;
+}
+/*repsonsive design for mobile*/
+@media(max-width:780px){
+    .gif-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-content h2{
+        font-size: 1.5rem;
+    }
+    .text-content p{
+        font-size: 0.9rem;
+    }
+    .anime-background{
+        width:100%; 
+    }
+    .skills{
+        flex-direction: column; /*Stacks items vertically */
+
+    }
+    .skills p{
+        font-size:0.9rem; /*Shrinks the font size for smaller screen.*/
+
+    }
+    .gif-container h1{
+        font-size: 2.5rem;
+    }
+    .skills h2{
+        font-size: 1rem;
+    }
+    .anime-coding{
+        width:90%; /*shrink the GIF for smaller screen */
+    }
+    .title-text{
+        font-size: 0.3rem;
+    }
+    .pc-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-pc p{
+        font-size: 0.8rem;
+    }
+    .hyte70{
+        width:80%;
+    }
+    .contact h2{
+        font-size:2rem; /*Adjust heading size*/
+    }
+    .contact p{
+        font-size:0.9rem;
+    }
+    .contact-btn{
+        font-size: 1rem;
+        padding:0.6rem 1.2rem;
+    }
+    .copyright{
+        font-size: 0.8rem; /*Reduce the size of copyright text when in smaller screen*/
+    }
+}
+@media(max-wdith:480px){
+    .skills{
+        font-size: 0.8rem; /*Shrink text further for very small screen */
+
+    }
+    .anime-coding{
+        width:100%; /*Make the GIF fit the container */
+    }
+    .anime-background{
+        object-fit: cover;
+    }
+    .title-text{
+        font-size: 0.2rem;
+    }
+    .skills h1{
+        font-size: 2rem;
+    }
+    .text-content h2{
+        font-size: 1.2rem;
+    }
+    .text-content p{
+        font-size: 0.8rem;
+    }
+    .hyte70{
+        width:60%; /*Shrink the size if on smaller screen*/
+    }
+    .content-pc p{
+        font-size: 0.5rem;
+    }
+    .pc-container{
+        font-size: 0.6rem;
+    }
+    .contact h2{
+        font-size:1.8rem; /*Smaller heading size on smaller screen*/
+
+    }
+    .contact p{
+        font-size:0.8rem;
+    }
+    .contact-btn{
+        font-size: 0.9rem; /*Smaller button text size*/
+        padding: 0.5rem 1rem; /*Compact padding*/
+    }
+}
